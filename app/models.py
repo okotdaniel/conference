@@ -1,7 +1,7 @@
 from django.db import models
 
 # Create your models here.
-class contactUs(models.Model):
+class Inquiries(models.Model):
 
     class Meta:
         verbose_name = "names"
@@ -84,7 +84,7 @@ class Papers(models.Model):
         max_length=200,
         null=True
     )
-    
+
     date = models.CharField(
         max_length=30,
         null=True
