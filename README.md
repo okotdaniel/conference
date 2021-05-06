@@ -8,7 +8,7 @@ python 3 and above
 virtualenv configured
 a web browser
 
-#installation
+# installation
 
 Clone the repository
 
@@ -40,8 +40,8 @@ python manage.py runserver
 create super user and login to the admin backend 
 python manage.py createsuperuser 
 
-#contributing 
+# contributing 
 fell free to contribute to this project 
 
-#otherwise buy me a buy or take me out on a vaccation. Ciao!!
+# otherwise buy me a buy or take me out on a vaccation. Ciao!!
 
