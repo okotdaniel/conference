@@ -1,3 +1,18 @@
+topic_choices = {
+    'computer science': ,
+    'engineering',
+    'mathematics',
+    'medicine',
+    'physics',
+    'astronomy',
+    'social science',
+    'chemistry',
+    'history',
+    'geography',
+
+}
+
+
 country_choices = {
     {"name": "Afghanistan", "code": "AF"}, 
     {"name": "land Islands", "code": "AX"}, 
@@ -245,19 +260,5 @@ country_choices = {
     {"name": "Zimbabwe", "code": "ZW"} 
 ]
 
-
-}
-
-topic_choices = {
-    'computer science': ,
-    'engineering',
-    'mathematics',
-    'medicine',
-    'physics',
-    'astronomy',
-    'social science',
-    'chemistry',
-    'history',
-    'geography',
 
 }

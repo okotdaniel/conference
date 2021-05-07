@@ -1,34 +1,6 @@
 from django.db import models
 
 # Create your models here.
-class Inquiries(models.Model):
-
-    class Meta:
-        verbose_name = "names"
-
-    names = models.CharField(
-        max_length=30,
-        null=True,
-    )
-
-    subject = models.CharField(
-        max_length=30,
-        null=True
-    )
-
-    message = models.TextField(
-        max_length=200,
-        null=True
-    )
-
-    date = models.TimeField(
-        auto_now=False, 
-        auto_now_add=False
-    )
-
-
-    def __str__(self):
-        return self.names
 
 
 class Participants(models.Model):
@@ -84,12 +56,46 @@ class Papers(models.Model):
         max_length=200,
         null=True
     )
+    profession = models.CharField(
+        max_length=200,
+        null=True
+    )
 
-    date = models.CharField(
+    date = models.DateTimeField(
+        auto_now=True
+    )
+    
+
+class Inquiries(models.Model):
+
+    class Meta:
+        pass
+
+    names = models.CharField(
+        max_length=30,
+        null=True,
+    )
+
+    subject = models.CharField(
         max_length=30,
         null=True
     )
-    
+
+    message = models.TextField(
+        max_length=200,
+        null=True
+    )
+
+    date = models.DateTimeField(
+        auto_now=True, 
+       
+    )
+
+
+    '''def __str__(self):
+        return self.names'''
+
+
 
 class Contacts(models.Model):
 
@@ -99,21 +105,18 @@ class Contacts(models.Model):
     )
 
     contacts = models.IntegerField(
-        max_length=30,
         null=True
     )
 
     profession = models.IntegerField(
-        max_length=30,
-        null=True
+        null=False
     )
 
     date = models.TimeField(
-        max_length=200,
         null=True
     )
 
-class program(models.Model):
+class Program(models.Model):
     title = models.CharField(
         max_length=30,
         null=True,
